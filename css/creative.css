@@ -231,3 +231,32 @@ header.masthead {
     background-color: #567bd4 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
+
+section {
+  padding-top: 4rem; }
+
+.portfolio-box {
+  height: 342px;
+  border: 1px solid #fff; }
+
+.portfolio-box .portfolio-box-caption {
+  opacity: 1; }
+
+.portfolio-box .project-description {
+  font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+  width: 75%;
+  margin: 10px auto; }
+
+.portfolio-box .project-description a {
+  color: #fff; }
+
+#services .btn {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, 0);
+  display: block; }
+
+#services .service-column {
+  padding-bottom: 50px; }
