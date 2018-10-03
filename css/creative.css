@@ -136,11 +136,13 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   background-image: url("../img/header-blue.png");
   background-position: center center;
-  text-shadow: 2px 2px 2px #0a0a0a;
+  text-shadow: 2px 2px 2px rgba(10, 10, 10, 0.5);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  header.masthead .btn {
+    box-shadow: 2px 2px 2px rgba(10, 10, 10, 0.5); }
   header.masthead hr {
     margin-top: 30px;
     margin-bottom: 30px; }

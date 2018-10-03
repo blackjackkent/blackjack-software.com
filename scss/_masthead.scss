@@ -4,7 +4,10 @@ header.masthead {
     padding-bottom: calc(10rem - 56px);
     background-image: url('../img/header-blue.png');
     background-position: center center;
-    text-shadow: 2px 2px 2px rgba(10, 10, 10, 1);
+    text-shadow: 2px 2px 2px rgba(10, 10, 10, 0.5);
+    .btn {
+        box-shadow: 2px 2px 2px rgba(10, 10, 10, 0.5);
+    }
     @include background-cover;
     hr {
         margin-top: 30px;
