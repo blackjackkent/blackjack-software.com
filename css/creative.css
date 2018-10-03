@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Blackjack Software v ()
- * Copyright 2013-2017 Rosalind Wills
+ * Copyright 2013-2018 Rosalind Wills
  * Licensed under MIT (https://github.com/BlackrockDigital/blackjack-software/blob/master/LICENSE)
  */
 body,
@@ -14,18 +14,18 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #6a8bd9; }
+  border-color: #0B557D; }
 
 hr.light {
   border-color: #fff; }
 
 a {
-  color: #6a8bd9;
+  color: #0B557D;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:hover {
-    color: #6a8bd9; }
+    color: #0b557d; }
 
 h1,
 h2,
@@ -36,7 +36,7 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 .bg-primary {
-  background-color: #6a8bd9 !important; }
+  background-color: #0B557D !important; }
 
 .bg-dark {
   background-color: #212529 !important; }
@@ -81,10 +81,10 @@ body {
   #mainNav .navbar-brand {
     font-weight: 700;
     text-transform: uppercase;
-    color: #6a8bd9;
+    color: #0B557D;
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #6a8bd9; }
+      color: #0b557d; }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
     font-size: .9rem;
@@ -93,10 +93,10 @@ body {
     color: #212529; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-      color: #6a8bd9; }
+      color: #0B557D; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-      color: #6a8bd9 !important;
+      color: #0B557D !important;
       background-color: transparent; }
       #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
       #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
@@ -121,20 +121,20 @@ body {
         border-bottom: 1px solid rgba(33, 37, 41, 0.1);
         background-color: #fff; }
         #mainNav.navbar-shrink .navbar-brand {
-          color: #6a8bd9; }
+          color: #0B557D; }
           #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-            color: #6a8bd9; }
+            color: #0b557d; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
           color: #212529; }
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-            color: #6a8bd9; } }
+            color: #0B557D; } }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.png");
+  background-image: url("../img/header-blue.png");
   background-position: center center;
   text-shadow: 2px 2px 2px #0a0a0a;
   -webkit-background-size: cover;
@@ -180,7 +180,7 @@ header.masthead {
     text-align: center;
     opacity: 0;
     color: #fff;
-    background: rgba(106, 139, 217, 0.9);
+    background: rgba(11, 85, 125, 0.9);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; }
@@ -211,7 +211,7 @@ header.masthead {
       font-size: 22px; } }
 
 .text-primary {
-  color: #6a8bd9 !important; }
+  color: #0B557D !important; }
 
 .btn {
   font-weight: 700;
@@ -224,11 +224,11 @@ header.masthead {
   padding: 1rem 2rem; }
 
 .btn-primary {
-  background-color: #6a8bd9;
-  border-color: #6a8bd9; }
+  background-color: #0B557D;
+  border-color: #0B557D; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: #fff;
-    background-color: #567bd4 !important; }
+    background-color: #094566 !important; }
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
 
