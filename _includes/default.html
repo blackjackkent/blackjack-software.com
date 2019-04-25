@@ -25,7 +25,7 @@
 
 	<!-- Le fav and touch icons -->
 	<!-- Update these with your own images -->
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="shortcut icon" href="/assets/ico/favicon.ico">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -90,7 +90,7 @@
 	</div>
 
 	<div class="col-sm-3 sidebar hidden-xs"
-		style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) no-repeat !important;{% endif %}">
+		style="{% if site.sidebar_background_image %}background: url({{site.sidebar_background_image}}) !important;{% endif %}">
 		{% include sidebar.html %}
 	</div>
 

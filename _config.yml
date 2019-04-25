@@ -14,7 +14,7 @@ defaults:
     scope:
       path: "" # empty string for all files
     values:
-      title: dbyll
+      title: Blackjack Software
 
 description: Thoughts on coding, gaming, and other nerd stuff
 author:
@@ -24,7 +24,7 @@ author:
   twitter: blackjackkent
   pinterest: 
   linkedin: 
-  bio: I'm a software dev who's been in the industry for over ten years, growing from a self-taught tinkerer in HTML to a specialist in Javascript, C#, and Android development.
+  bio: Hi, I'm Rosalind! I'm a software dev who's been in the industry for over ten years, growing from a self-taught tinkerer in HTML to a specialist in Javascript, C#, and Android development.
   email_md5: 9a54d2d18db64b931e72527a15bbc4fa
 
 rss_path: feed.xml
@@ -32,7 +32,7 @@ categories_path: categories.html
 tags_path: tags.html
 
 # set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+sidebar_background_image: https://us.123rf.com/450wm/sotnichenko/sotnichenko1806/sotnichenko180600184/103905985-seamless-texture-of-purple-cement-plaster-plaster-wall-background-repeatable-pattern-with-finishing-.jpg?ver=6
 
 BASE_PATH:
 
