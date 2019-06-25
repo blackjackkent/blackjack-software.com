@@ -229,3 +229,8 @@ ul.dropdown-menu>li>a>i.fa {
 figure.highlight {
     margin: 10px 0;
 }
+
+pre {
+    tab-size: 2;
+    -moz-tab-size: 2;
+}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clean Control Flow in .NET Core Controllers Using Custom Exceptions
-categories: [software]
+categories: [programming]
 tags: [c#,.net core,architecture,api]
 fullview: true
 ---
