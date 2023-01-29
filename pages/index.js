@@ -1,6 +1,7 @@
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "../components/Layout";
-import styles from "../styles/Home.module.css";
+import styles from "./Home.module.scss";
 
 export default function Home() {
 	return (
@@ -14,14 +15,20 @@ export default function Home() {
 					<div className="row">
 						<div className="col-sm-12 col-md-12 col-lg-12">
 							<div className="title-block">
-								<h2>Alex Smith</h2>
-								<div className="owl-carousel text-rotation">
+								<Image
+									className={styles.logo}
+									src={"/images/logo.png"}
+									width={500}
+									height={500}
+								/>
+								<h2>Rosalind Wills</h2>
+								<div className="text-rotation">
 									<div className="item">
-										<div className="sp-subtitle">Web Designer</div>
+										<div className="sp-subtitle">Web App Developer</div>
 									</div>
 
 									<div className="item">
-										<div className="sp-subtitle">Frontend-developer</div>
+										<div className="sp-subtitle">Tech Speaker and Educator</div>
 									</div>
 								</div>
 							</div>
