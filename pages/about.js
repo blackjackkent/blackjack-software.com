@@ -1,7 +1,11 @@
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../components/Layout";
 
 export default function About() {
+	const now = new Date();
+	const birthday = new Date(1989, 6, 5);
+	let age = now.getFullYear() - birthday.getFullYear() - 1;
 	return (
 		<Layout>
 			<Head>
@@ -19,12 +23,20 @@ export default function About() {
 					<div className="row">
 						<div className="col-xs-12 col-sm-7">
 							<p>
-								Proin volutpat mauris ac pellentesque pharetra. Suspendisse
-								congue elit vel odio suscipit, sit amet tempor nisl imperdiet.
-								Quisque ex justo, faucibus ut mi in, condimentum finibus dolor.
-								Aliquam vitae hendrerit dolor, eget imperdiet mauris. Maecenas
-								et ante id ipsum condimentum dictum et vel massa. Ut in
-								imperdiet dolor, vel consectetur dui.
+								Roz for short. She/her. Javascript Engineer at{" "}
+								<a href="http://oneswitchboard.com">Switchboard</a>. Variety
+								Twitch streamer. Tech speaker and content creator. Interested in
+								DevRel, ReactJS, video games, and napping with the cat.
+							</p>
+							<p>
+								I have over a decade of experience in the software industry and
+								my passion is in helping people make things happen; sometimes
+								that means making an app that makes their lives easier, and
+								sometimes it means teaching them how to build the app they want
+								to see in the world.
+							</p>
+							<p>
+								I want to help you too! Let me know what I can do for you. :)
 							</p>
 						</div>
 
@@ -33,27 +45,24 @@ export default function About() {
 								<ul>
 									<li>
 										<span className="title">Age</span>
-										<span className="value">32</span>
+										<span className="value">{age}</span>
 									</li>
 
 									<li>
 										<span className="title">Residence</span>
-										<span className="value">USA</span>
-									</li>
-
-									<li>
-										<span className="title">Address</span>
-										<span className="value">88 Some Street, Some Town</span>
+										<span className="value">Chicago, IL, USA</span>
 									</li>
 
 									<li>
 										<span className="title">e-mail</span>
-										<span className="value">email@example.com</span>
+										<span className="value">
+											rosalind@blackjack-software.com
+										</span>
 									</li>
 
 									<li>
 										<span className="title">Phone</span>
-										<span className="value">+0123 123 456 789</span>
+										<span className="value">(773) 413-9463</span>
 									</li>
 								</ul>
 							</div>
@@ -78,27 +87,15 @@ export default function About() {
 								<div className="info-list-w-icon">
 									<div className="info-block-w-icon">
 										<div className="ci-icon">
-											<i className="lnr lnr-store"></i>
-										</div>
-										<div className="ci-text">
-											<h4>Ecommerce</h4>
-											<p>
-												Pellentesque pellentesque, ipsum sit amet auctor
-												accumsan, odio tortor bibendum massa, sit amet ultricies
-												ex lectus scelerisque nibh. Ut non sodales.
-											</p>
-										</div>
-									</div>
-									<div className="info-block-w-icon">
-										<div className="ci-icon">
 											<i className="lnr lnr-laptop-phone"></i>
 										</div>
 										<div className="ci-text">
-											<h4>Web Design</h4>
+											<h4>Web App Development</h4>
 											<p>
-												Pellentesque pellentesque, ipsum sit amet auctor
-												accumsan, odio tortor bibendum massa, sit amet ultricies
-												ex lectus scelerisque nibh. Ut non sodales.
+												If you have a task, a community, or an idea that needs
+												software to run smoothly, I can help you make it happen.
+												I build and maintain web applications designed to
+												brighten your day or ease your load!
 											</p>
 										</div>
 									</div>
@@ -111,29 +108,24 @@ export default function About() {
 								<div className="info-list-w-icon">
 									<div className="info-block-w-icon">
 										<div className="ci-icon">
-											<i className="lnr lnr-pencil"></i>
+											<i className="lnr lnr-graduation-hat"></i>
 										</div>
-										<div className="ci-text">
-											<h4>Copywriting</h4>
-											<p>
-												Pellentesque pellentesque, ipsum sit amet auctor
-												accumsan, odio tortor bibendum massa, sit amet ultricies
-												ex lectus scelerisque nibh. Ut non sodales.
-											</p>
-										</div>
-									</div>
-									<div className="info-block-w-icon">
-										<div className="ci-icon">
-											<i className="lnr lnr-flag"></i>
-										</div>
-										<div className="ci-text">
-											<h4>Management</h4>
-											<p>
-												Pellentesque pellentesque, ipsum sit amet auctor
-												accumsan, odio tortor bibendum massa, sit amet ultricies
-												ex lectus scelerisque nibh. Ut non sodales.
-											</p>
-										</div>
+										<h4>Software Development Education</h4>
+										<p>
+											I offer <Link href="/contact">private tutoring</Link> for
+											those interested in learning to code, making the
+											complicated concepts of software development
+											understandable and accessible. I also do regular{" "}
+											<a href="http://www.twitch.tv/blackjack_kent">
+												livecoding streams on Twitch
+											</a>
+											, where I answer any and all audience questions about all
+											things programming, and run a{" "}
+											<a href="http://www.tiktok.com/@blackjackkent">
+												TikTok series
+											</a>{" "}
+											on getting started with Javascript from the ground up.
+										</p>
 									</div>
 								</div>
 							</div>
@@ -141,260 +133,6 @@ export default function About() {
 					</div>
 
 					<div className="white-space-30"></div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-12">
-							<div className="block-title">
-								<h3>Testimonials</h3>
-							</div>
-						</div>
-					</div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-12">
-							<div className="testimonials owl-carousel">
-								<div className="testimonial">
-									<div className="img">
-										<img
-											src="img/testimonials/testimonial-1.jpg"
-											alt="Alex Smith"
-										/>
-									</div>
-									<div className="text">
-										<p>
-											Vivamus at molestie dui, eu ornare orci. Curabitur vel
-											egestas dolor. Nulla condimentum nunc sit amet urna tempus
-											finibus. Duis mollis leo id ligula pellentesque, at
-											vehicula dui ultrices.
-										</p>
-									</div>
-
-									<div className="author-info">
-										<h4 className="author">Julia Hickman</h4>
-										<h5 className="company">Omni Source</h5>
-										<div className="icon">
-											<i className="fas fa-quote-right"></i>
-										</div>
-									</div>
-								</div>
-								<div className="testimonial">
-									<div className="img">
-										<img
-											src="img/testimonials/testimonial-2.jpg"
-											alt="Alex Smith"
-										/>
-									</div>
-									<div className="text">
-										<p>
-											Vivamus at molestie dui, eu ornare orci. Curabitur vel
-											egestas dolor. Nulla condimentum nunc sit amet urna tempus
-											finibus. Duis mollis leo id ligula pellentesque, at
-											vehicula dui ultrices.
-										</p>
-									</div>
-
-									<div className="author-info">
-										<h4 className="author">Robert Watkins</h4>
-										<h5 className="company">Endicott Shoes</h5>
-										<div className="icon">
-											<i className="fas fa-quote-right"></i>
-										</div>
-									</div>
-								</div>
-								<div className="testimonial">
-									<div className="img">
-										<img
-											src="img/testimonials/testimonial-3.jpg"
-											alt="Alex Smith"
-										/>
-									</div>
-									<div className="text">
-										<p>
-											Vivamus at molestie dui, eu ornare orci. Curabitur vel
-											egestas dolor. Nulla condimentum nunc sit amet urna tempus
-											finibus. Duis mollis leo id ligula pellentesque, at
-											vehicula dui ultrices.
-										</p>
-									</div>
-
-									<div className="author-info">
-										<h4 className="author">Kristin Carroll</h4>
-										<h5 className="company">Helping Hand</h5>
-										<div className="icon">
-											<i className="fas fa-quote-right"></i>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div className="white-space-50"></div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-12">
-							<div className="block-title">
-								<h3>Cilents</h3>
-							</div>
-						</div>
-					</div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-12">
-							<div className="clients owl-carousel">
-								<div className="client-block">
-									<a href="#" target="_blank" title="Logo">
-										<img src="img/clients/client-1.png" alt="Logo" />
-									</a>
-								</div>
-
-								<div className="client-block">
-									<a href="#" target="_blank" title="Logo">
-										<img src="img/clients/client-2.png" alt="Logo" />
-									</a>
-								</div>
-
-								<div className="client-block">
-									<a href="#" target="_blank" title="Logo">
-										<img src="img/clients/client-3.png" alt="Logo" />
-									</a>
-								</div>
-
-								<div className="client-block">
-									<a href="#" target="_blank" title="Logo">
-										<img src="img/clients/client-4.png" alt="Logo" />
-									</a>
-								</div>
-
-								<div className="client-block">
-									<a href="#" target="_blank" title="Logo">
-										<img src="img/clients/client-5.png" alt="Logo" />
-									</a>
-								</div>
-
-								<div className="client-block">
-									<a href="#" target="_blank" title="Logo">
-										<img src="img/clients/client-6.png" alt="Logo" />
-									</a>
-								</div>
-
-								<div className="client-block">
-									<a href="#" target="_blank" title="Logo">
-										<img src="img/clients/client-7.png" alt="Logo" />
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div className="white-space-50"></div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-12">
-							<div className="block-title">
-								<h3>Pricing</h3>
-							</div>
-						</div>
-					</div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-12">
-							<div className="fw-pricing clearfix row">
-								<div className="fw-package-wrap col-md-6">
-									<div className="fw-package">
-										<div className="fw-heading-row">
-											<span>Silver</span>
-										</div>
-
-										<div className="fw-pricing-row">
-											<span>$64</span>
-											<small>per month</small>
-										</div>
-
-										<div className="fw-button-row">
-											<a href="#" target="_self" className="btn btn-secondary">
-												Free Trial
-											</a>
-										</div>
-
-										<div className="fw-default-row">Lorem ipsum dolor</div>
-										<div className="fw-default-row">
-											Pellentesque scelerisque
-										</div>
-										<div className="fw-default-row">Morbi eu sagittis</div>
-									</div>
-								</div>
-
-								<div className="fw-package-wrap col-md-6 highlight-col">
-									<div className="fw-package">
-										<div className="fw-heading-row">
-											<span>Gold</span>
-										</div>
-
-										<div className="fw-pricing-row">
-											<span>$128</span>
-											<small>per month</small>
-										</div>
-
-										<div className="fw-button-row">
-											<a href="#" target="_self" className="btn btn-primary">
-												Free Trial
-											</a>
-										</div>
-
-										<div className="fw-default-row">Lorem ipsum dolor</div>
-										<div className="fw-default-row">
-											Pellentesque scelerisque
-										</div>
-										<div className="fw-default-row">Morbi eu sagittis</div>
-										<div className="fw-default-row">Donec non diam</div>
-										<div className="fw-default-row"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div className="white-space-50"></div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-12">
-							<div className="block-title">
-								<h3>
-									Fun <span>Facts</span>
-								</h3>
-							</div>
-						</div>
-					</div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-4">
-							<div className="fun-fact gray-default">
-								<i className="lnr lnr-heart"></i>
-								<h4>Happy Clients</h4>
-								<span className="fun-fact-block-value">578</span>
-								<span className="fun-fact-block-text"></span>
-							</div>
-						</div>
-
-						<div className="col-xs-12 col-sm-4">
-							<div className="fun-fact gray-default">
-								<i className="lnr lnr-clock"></i>
-								<h4>Working Hours</h4>
-								<span className="fun-fact-block-value">4,780</span>
-								<span className="fun-fact-block-text"></span>
-							</div>
-						</div>
-
-						<div className="col-xs-12 col-sm-4">
-							<div className="fun-fact gray-default">
-								<i className="lnr lnr-star"></i>
-								<h4>Awards Won</h4>
-								<span className="fun-fact-block-value">15</span>
-								<span className="fun-fact-block-text"></span>
-							</div>
-						</div>
-					</div>
 				</div>
 			</section>
 		</Layout>

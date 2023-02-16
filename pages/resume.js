@@ -19,97 +19,125 @@ export default function Resume() {
 					<div className="row">
 						<div className="col-xs-12 col-sm-7">
 							<div className="block-title">
-								<h3>Education</h3>
-							</div>
-
-							<div className="timeline timeline-second-style clearfix">
-								<div className="timeline-item clearfix">
-									<div className="left-part">
-										<h5 className="item-period">2008</h5>
-										<span className="item-company">University of Studies</span>
-									</div>
-									<div className="divider"></div>
-									<div className="right-part">
-										<h4 className="item-title">Frontend Development</h4>
-										<p>
-											Maecenas finibus nec sem ut imperdiet. Ut tincidunt est ac
-											dolor aliquam sodales. Phasellus sed mauris hendrerit,
-											laoreet sem in, lobortis ante.
-										</p>
-									</div>
-								</div>
-
-								<div className="timeline-item clearfix">
-									<div className="left-part">
-										<h5 className="item-period">2007</h5>
-										<span className="item-company">
-											University of Studies
-										</span>{" "}
-									</div>
-									<div className="divider"></div>
-									<div className="right-part">
-										<h4 className="item-title">Graphic Design</h4>
-										<p>
-											Aliquam tincidunt malesuada tortor vitae iaculis. In eu
-											turpis iaculis, feugiat risus quis, aliquet urna. Quisque
-											fringilla mollis risus, eu pulvinar dolor.
-										</p>
-									</div>
-								</div>
-							</div>
-
-							<div className="white-space-50"></div>
-
-							<div className="block-title">
 								<h3>Experience</h3>
 							</div>
 
 							<div className="timeline timeline-second-style clearfix">
 								<div className="timeline-item clearfix">
 									<div className="left-part">
-										<h5 className="item-period">2016 - Current</h5>
-										<span className="item-company">Google</span>
+										<h5 className="item-period">2023-Present</h5>
+										<span className="item-company">Switchboard, Inc.</span>
 									</div>
 									<div className="divider"></div>
 									<div className="right-part">
-										<h4 className="item-title">Lead Ui/Ux Designer</h4>
+										<h4 className="item-title">Software Engineer</h4>
 										<p>
-											Praesent dignissim sollicitudin justo, sed elementum quam
-											lacinia quis. Phasellus eleifend tristique posuere. Sed
-											vitae dui nec magna.
+											Front-end development for progressive political campaign
+											software.
+										</p>
+									</div>
+								</div>
+								<div className="timeline-item clearfix">
+									<div className="left-part">
+										<h5 className="item-period">2020-2023</h5>
+										<span className="item-company">Automattic, Inc.</span>
+									</div>
+									<div className="divider"></div>
+									<div className="right-part">
+										<h4 className="item-title">Javascript Engineer</h4>
+										<p>
+											Full-stack Javascript (React) and PHP development
+											supporting Wordpress.com and associated services. Operated
+											as interim team lead for 6 months, managing a team of five
+											other developers.
 										</p>
 									</div>
 								</div>
 
 								<div className="timeline-item clearfix">
 									<div className="left-part">
-										<h5 className="item-period">2013 - 2016</h5>
-										<span className="item-company">Adobe</span>
+										<h5 className="item-period">2017-2020</h5>
+										<span className="item-company">Rightpoint, LLC</span>
 									</div>
 									<div className="divider"></div>
 									<div className="right-part">
-										<h4 className="item-title">Senior Ui/Ux Designer</h4>
+										<h4 className="item-title">Senior Software Consultant</h4>
 										<p>
-											Maecenas tempus faucibus rutrum. Duis eu aliquam urna.
-											Proin vitae nulla tristique, ornare felis id, congue
-											libero. Nam volutpat euismod quam.
+											Full-stack cross-platform development on a consulting
+											basis. Projects included development of React-based
+											websites, maintenance of a .NET web application, and
+											Android application development. Also established position
+											as one of Rightpoint&apos;s subject-matter experts on
+											React and its surrounding ecosystem, giving multiple talks
+											and one-on-one support to other developers.
 										</p>
 									</div>
 								</div>
 
 								<div className="timeline-item clearfix">
 									<div className="left-part">
-										<h5 className="item-period">2011 - 2013</h5>
-										<span className="item-company">Google</span>
+										<h5 className="item-period">2015-2017</h5>
+										<span className="item-company">JumpForward, Inc.</span>
 									</div>
 									<div className="divider"></div>
 									<div className="right-part">
-										<h4 className="item-title">Junior Ui/Ux Designer</h4>
+										<h4 className="item-title">Software Engineer</h4>
 										<p>
-											Duis mollis nunc quis quam viverra venenatis. Nulla nulla
-											arcu, congue vitae nunc ac, sodales ultricies diam. Nullam
-											justo leo, tincidunt sit amet.
+											Full-stack development of AngularJS and C# WebApi
+											greenfield rebuild of financial software designed for
+											budget management in college athletics departments.
+											Participated in transition of company towards agile
+											development processes.
 										</p>
+									</div>
+								</div>
+
+								<div className="timeline-item clearfix">
+									<div className="left-part">
+										<h5 className="item-period">2012-2015</h5>
+										<span className="item-company">Guaranteed Rate, Inc.</span>
+									</div>
+									<div className="divider"></div>
+									<div className="right-part">
+										<h4 className="item-title">Junior Web Developer</h4>
+										<p>
+											Front-end and server-side development, both on legacy PHP
+											codebase and on greenfield transition to .NET stack using
+											C# WebAPI and AngularJS client-side framework. Engaged in
+											agile development workflow for planning processes. Worked
+											both solo and in pair-programming contexts to develop new
+											features.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div className="block-title">
+								<h3>Education</h3>
+							</div>
+
+							<div className="timeline timeline-second-style clearfix">
+								<div className="timeline-item clearfix">
+									<div className="left-part">
+										<h5 className="item-period">2014</h5>
+										<span className="item-company">DePaul University</span>{" "}
+									</div>
+									<div className="divider"></div>
+									<div className="right-part">
+										<h4 className="item-title">
+											Master of Science, Software Engineering
+										</h4>
+									</div>
+								</div>
+								<div className="timeline-item clearfix">
+									<div className="left-part">
+										<h5 className="item-period">2011</h5>
+										<span className="item-company">Goucher College</span>
+									</div>
+									<div className="divider"></div>
+									<div className="right-part">
+										<h4 className="item-title">Bachelor of Arts, English</h4>
+										<p>Minor: Computer Science</p>
 									</div>
 								</div>
 							</div>
@@ -118,164 +146,123 @@ export default function Resume() {
 						<div className="col-xs-12 col-sm-5">
 							<div className="block-title">
 								<h3>
-									Design <span>Skills</span>
+									Speaking <span>Engagements</span>
 								</h3>
 							</div>
 
-							<div className="skills-info skills-second-style">
-								<div className="skill clearfix">
-									<h4>Web Design</h4>
-									<div className="skill-value">95%</div>
+							<div className="timeline timeline-second-style clearfix">
+								<div className="timeline-item clearfix">
+									<div className="left-part">
+										<h5 className="item-period">July 2020</h5>
+										<span className="item-company">Decoupled Days 2020</span>
+									</div>
+									<div className="divider"></div>
+									<div className="right-part">
+										<h4 className="item-title">
+											"Migrating React Components to Use Hooks"
+										</h4>
+									</div>
 								</div>
-								<div className="skill-container skill-1">
-									<div className="skill-percentage"></div>
+								<div className="timeline-item clearfix">
+									<div className="left-part">
+										<h5 className="item-period">May 2020</h5>
+										<span className="item-company">ForwardJS 2020</span>
+									</div>
+									<div className="divider"></div>
+									<div className="right-part">
+										<h4 className="item-title">
+											"Git Good - Getting the Most Out of the Git CLI"
+										</h4>
+									</div>
 								</div>
-								<div className="skill clearfix">
-									<h4>Print Design</h4>
-									<div className="skill-value">65%</div>
-								</div>
-								<div className="skill-container skill-2">
-									<div className="skill-percentage"></div>
-								</div>
-								<div className="skill clearfix">
-									<h4>Logo Design</h4>
-									<div className="skill-value">80%</div>
-								</div>
-								<div className="skill-container skill-3">
-									<div className="skill-percentage"></div>
-								</div>
-								<div className="skill clearfix">
-									<h4>Graphic Design</h4>
-									<div className="skill-value">90%</div>
-								</div>
-								<div className="skill-container skill-4">
-									<div className="skill-percentage"></div>
+								<div className="timeline-item clearfix">
+									<div className="left-part">
+										<h5 className="item-period">May 2019</h5>
+										<span className="item-company">Chicago Code Camp 2019</span>
+									</div>
+									<div className="divider"></div>
+									<div className="right-part">
+										<h4 className="item-title">
+											"Intro to Redux State Management in Javascript"
+										</h4>
+									</div>
 								</div>
 							</div>
 
-							<div className="white-space-10"></div>
+							<div className="white-space-30"></div>
 
 							<div className="block-title">
-								<h3>
-									Coding <span>Skills</span>
-								</h3>
-							</div>
-
-							<div className="skills-info skills-second-style">
-								<div className="skill clearfix">
-									<h4>JavaScript</h4>
-									<div className="skill-value">95%</div>
-								</div>
-								<div className="skill-container skill-5">
-									<div className="skill-percentage"></div>
-								</div>
-								<div className="skill clearfix">
-									<h4>PHP</h4>
-									<div className="skill-value">85%</div>
-								</div>
-								<div className="skill-container skill-6">
-									<div className="skill-percentage"></div>
-								</div>
-								<div className="skill clearfix">
-									<h4>HTML/CSS</h4>
-									<div className="skill-value">100%</div>
-								</div>
-								<div className="skill-container skill-7">
-									<div className="skill-percentage"></div>
-								</div>
-								<div className="skill clearfix">
-									<h4>Smarty/Twig</h4>
-									<div className="skill-value">75%</div>
-								</div>
-								<div className="skill-container skill-8">
-									<div className="skill-percentage"></div>
-								</div>
-
-								<div className="skill clearfix">
-									<h4>Perl</h4>
-									<div className="skill-value">90%</div>
-								</div>
-								<div className="skill-container skill-9">
-									<div className="skill-percentage"></div>
-								</div>
-							</div>
-
-							<div className="white-space-10"></div>
-
-							<div className="block-title">
-								<h3>Knowledges</h3>
+								<h3>Languages</h3>
 							</div>
 
 							<ul className="knowledges">
-								<li>Marketing</li>
-								<li>Print</li>
-								<li>Digital Design</li>
-								<li>Social Media</li>
-								<li>Time Management</li>
-								<li>Communication</li>
-								<li>Problem-Solving</li>
-								<li>Social Networking</li>
-								<li>Flexibility</li>
+								<li>Javascript</li>
+								<li>C#</li>
+								<li>PHP</li>
+								<li>HTML/CSS</li>
+								<li>SQL</li>
+								<li>Java</li>
+								<li>Kotlin</li>
 							</ul>
+
+							<div className="white-space-30"></div>
+
+							<div className="block-title">
+								<h3>Frameworks</h3>
+							</div>
+
+							<ul className="knowledges">
+								<li>ReactJS</li>
+								<li>react-query</li>
+								<li>Redux</li>
+								<li>CSS-in-JS</li>
+								<li>NodeJS</li>
+								<li>.NET Core</li>
+							</ul>
+
+							<div className="white-space-30"></div>
+
+							<div className="block-title">
+								<h3>Testing</h3>
+							</div>
+
+							<ul className="knowledges">
+								<li>Jest</li>
+								<li>Enzyme</li>
+								<li>XUnit</li>
+								<li>JUnit</li>
+							</ul>
+
+							<div className="white-space-30"></div>
+
+							<div className="block-title">
+								<h3>Databases</h3>
+							</div>
+
+							<ul className="knowledges">
+								<li>MSSQL</li>
+								<li>MySQL</li>
+							</ul>
+
+							<div className="white-space-30"></div>
+
+							<div className="block-title">
+								<h3>Technologies</h3>
+							</div>
+
+							<ul className="knowledges">
+								<li>Git CLI</li>
+								<li>Visual Studio Code</li>
+								<li>Postman</li>
+								<li>Webpack</li>
+								<li>Github</li>
+							</ul>
+
+							<div className="white-space-30"></div>
 						</div>
 					</div>
 
 					<div className="white-space-50"></div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-12">
-							<div className="block-title">
-								<h3>Certificates</h3>
-							</div>
-						</div>
-					</div>
-
-					<div className="row">
-						<div className="col-xs-12 col-sm-6">
-							<div className="certificate-item clearfix">
-								<div className="certi-logo">
-									<img src="img/clients/client-1.png" alt="logo" />
-								</div>
-
-								<div className="certi-content">
-									<div className="certi-title">
-										<h4>Psyhology of Intertnation Design</h4>
-									</div>
-									<div className="certi-id">
-										<span>Membership ID: XXXX</span>
-									</div>
-									<div className="certi-date">
-										<span>19 April 2018</span>
-									</div>
-									<div className="certi-company">
-										<span></span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div className="col-xs-12 col-sm-6">
-							<div className="certificate-item clearfix">
-								<div className="certi-logo">
-									<img src="img/clients/client-1.png" alt="logo" />
-								</div>
-
-								<div className="certi-content">
-									<div className="certi-title">
-										<h4>Psyhology of Intertnation Design</h4>
-									</div>
-									<div className="certi-id">
-										<span>Membership ID: XXXX</span>
-									</div>
-									<div className="certi-date">
-										<span>19 April 2018</span>
-									</div>
-									<div className="certi-company">
-										<span></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</section>
 		</Layout>
