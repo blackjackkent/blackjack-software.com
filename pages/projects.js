@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "../components/Layout";
+import ProjectItem from "../components/projects/ProjectItem";
 import styles from "./Home.module.scss";
 
 export default function Portfolio() {
@@ -19,34 +20,40 @@ export default function Portfolio() {
           <div className="row">
             <div className="col-xs-12 col-sm-12">
               <div className="portfolio-content">
-                <div className="portfolio-grid three-columns">
-                  <figure className="item">
-                    <div className="portfolio-item-header">
-                      <i className="fa fa-laptop-code"></i>
-                      <h4 className="name">RPThreadTracker</h4>
-                      <a href="http://www.rpthreadtracker.com">
-                        http://www.rpthreadtracker.com
-                      </a>
-                    </div>
-                    <p>
-                      A web application established in 2012, offering tools
-                      supporting RPers and collaborative writers on Tumblr.
-                    </p>
-                  </figure>
-                  <figure className="item">
-                    <div className="portfolio-item-header">
-                      <i className="fa fa-laptop-code"></i>
-                      <h4 className="name">React Multivalue Text Input</h4>
-                      <a href="https://www.npmjs.com/package/react-multivalue-text-input">
-                        https://www.npmjs.com/package/react-multivalue-text-input
-                      </a>
-                    </div>
-                    <p>
-                      A text input component for React which maintains and
+                <div className="items">
+                  <ProjectItem
+                    name="RPThreadTracker"
+                    icon="fa-laptop-code"
+                    url="http://www.rpthreadtracker.com"
+                    description="A web application established in 2012, offering tools
+                      supporting RPers and collaborative writers on Tumblr."
+                  />
+                  <ProjectItem
+                    name="React Multivalue Text Input"
+                    icon="fa-laptop-code"
+                    url="https://www.npmjs.com/package/react-multivalue-text-input"
+                    description="A text input component for React which maintains and
                       displays a collection of entered values as an array of
-                      strings.
-                    </p>
-                  </figure>
+                      strings."
+                  />
+                  <ProjectItem
+                    name="Tutoring - ADA Developer Academy"
+                    icon="fa-chalkboard-teacher"
+                    url="https://adadevelopersacademy.org"
+                    description="Tutoring and TA work helping to educate new developers from groups underrepresented in the tech industry."
+                  />
+                  <ProjectItem
+                    name="Sunday Afternoon Code Squad"
+                    icon="fa-brands fa-twitch"
+                    url="https://www.twitch.tv/blackjack_kent"
+                    description="Livecoding on software development projects and answering programming questions from audience members."
+                  />
+                  <ProjectItem
+                    name="Learn Javascript One Byte at a Time"
+                    icon="fa-brands fa-tiktok"
+                    url="https://www.tiktok.com/@blackjackkent"
+                    description="Bite-sized Javascript education with cute cat videos for motivation!"
+                  />
                 </div>
               </div>
             </div>
