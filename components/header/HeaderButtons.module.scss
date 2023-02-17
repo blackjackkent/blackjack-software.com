@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.headerButtons {
+  margin-top: 50px;
+  .primary {
+    background-color: transparent;
+    color: $text-color;
+    border-color: $text-color;
+    &:hover {
+      background-color: $white;
+      color: $primary-color;
+      border-color: $white;
+    }
+  }
+}

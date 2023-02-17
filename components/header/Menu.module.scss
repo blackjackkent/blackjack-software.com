@@ -1,0 +1,114 @@
+@import "../../styles/variables";
+
+@media only screen and (min-width: 1025px) {
+  .mainMenu {
+    position: absolute;
+    padding: 15px 0;
+    width: 70px;
+    right: -90px;
+    background-color: $background-color;
+    border-radius: 35px;
+    z-index: 999;
+    list-style: none;
+    top: 0;
+    -webkit-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 30px -5px rgba(0, 0, 0, 0.15);
+    background-color: #222;
+    width: 86px;
+    left: -86px;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    border-radius: 0;
+    a {
+      display: block;
+      position: relative;
+      color: $text-color;
+      padding: 10px;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+
+      border-bottom: 1px solid #333;
+      &.active,
+      &:focus,
+      &:hover {
+        color: $primary-color;
+        .linkText {
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+    .menuIcon {
+      display: block;
+      font-size: 30px;
+    }
+    .linkText {
+      position: absolute;
+      width: auto;
+      visibility: hidden;
+      opacity: 0;
+      color: $white;
+      padding: 2px 10px;
+      background-color: $primary-color;
+      white-space: nowrap;
+      right: 0;
+      top: -50%;
+      margin-top: 50%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      z-index: 0;
+      box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.22);
+      position: relative;
+      left: 0;
+      right: 0;
+      right: auto;
+      visibility: visible;
+      opacity: 1;
+      color: #eee;
+      font-size: 11px;
+      padding: 8px 0 5px;
+      background: transparent;
+      box-shadow: none;
+    }
+    a:hover .linkText {
+      right: 100%;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  ul.mainMenu {
+    margin: 30px 0;
+  }
+
+  ul.mainMenu a {
+    display: block;
+    color: #fff;
+    padding: 12px 0;
+    line-height: 21px;
+    opacity: 0.7;
+  }
+
+  ul.mainMenu a.active {
+    opacity: 1;
+  }
+
+  ul.mainMenu .menuIcon {
+    display: none;
+  }
+
+  ul.mainMenu .linkText {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}

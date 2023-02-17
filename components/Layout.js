@@ -3,30 +3,41 @@ import HeaderPhoto from "./header/HeaderPhoto";
 import SocialLinks from "./header/SocialLinks";
 import HeaderButtons from "./header/HeaderButtons";
 import Copyrights from "./header/Copyrights";
-export default function Layout({ children }) {
-	return (
-		<>
-			<div className="page">
-				<div className="page-content">
-					<header id="site_header" className="header mobile-menu-hide">
-						<HeaderPhoto />
-						<Menu />
-						<SocialLinks />
-						<HeaderButtons />
-						<Copyrights />
-					</header>
+import styles from "./Layout.module.scss";
 
-					<div className="menu-toggle">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
+export default function Layout({ children, title }) {
+  return (
+    <>
+      <div className={styles.page}>
+        <div className={styles.pageContent}>
+          <header className={`${styles.header} ${styles.mobileMenuHide}`}>
+            <HeaderPhoto />
+            <Menu />
+            <SocialLinks />
+            <HeaderButtons />
+            <Copyrights />
+          </header>
 
-					<div className="content-area">
-						<div className="content-sections">{children}</div>
-					</div>
-				</div>
-			</div>
-		</>
-	);
+          <div className={styles.menuToggle}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div className={styles.contentArea}>
+            <div className={styles.contentSections}>
+              <section className={styles.contentSection}>
+                <div className={styles.sectionContent}>
+                  <div className={styles.pageTitle}>
+                    <h2>{title}</h2>
+                  </div>
+                  {children}
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

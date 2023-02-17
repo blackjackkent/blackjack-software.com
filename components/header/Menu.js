@@ -1,36 +1,37 @@
 import Link from "next/link";
+import styles from "./Menu.module.scss";
 
 const Menu = () => {
   return (
-    <ul className="main-menu">
-      <li className="active">
+    <ul className={styles.mainMenu}>
+      <li className={styles.active}>
         <Link href="/" className="nav-anim">
-          <span className="menu-icon lnr lnr-home"></span>
-          <span className="link-text">Home</span>
+          <span className={`${styles.menuIcon} lnr lnr-home`}></span>
+          <span className={styles.linkText}>Home</span>
         </Link>
       </li>
       <li>
         <Link href="/about" className="nav-anim">
-          <span className="menu-icon lnr lnr-user"></span>
-          <span className="link-text">About Me</span>
+          <span className={`${styles.menuIcon} lnr lnr-user`}></span>
+          <span className={styles.linkText}>About Me</span>
         </Link>
       </li>
       <li>
         <Link href="/resume" className="nav-anim">
-          <span className="menu-icon lnr lnr-graduation-hat"></span>
-          <span className="link-text">Resume</span>
+          <span className={`${styles.menuIcon} lnr lnr-graduation-hat`}></span>
+          <span className={styles.linkText}>Resume</span>
         </Link>
       </li>
       <li>
         <Link href="/projects" className="nav-anim">
-          <span className="menu-icon lnr lnr-briefcase"></span>
-          <span className="link-text">Projects</span>
+          <span className={`${styles.menuIcon} lnr lnr-briefcase`}></span>
+          <span className={styles.linkText}>Projects</span>
         </Link>
       </li>
       <li>
         <Link href="/contact" className="nav-anim">
-          <span className="menu-icon lnr lnr-envelope"></span>
-          <span className="link-text">Contact</span>
+          <span className={`${styles.menuIcon} lnr lnr-envelope`}></span>
+          <span className={styles.linkText}>Contact</span>
         </Link>
       </li>
     </ul>
