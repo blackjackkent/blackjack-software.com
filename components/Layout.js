@@ -28,9 +28,11 @@ export default function Layout({ children, title }) {
             <div className={styles.contentSections}>
               <section className={styles.contentSection}>
                 <div className={styles.sectionContent}>
-                  <div className={styles.pageTitle}>
-                    <h2>{title}</h2>
-                  </div>
+                  {title && (
+                    <div className={styles.pageTitle}>
+                      <h2>{title}</h2>
+                    </div>
+                  )}
                   {children}
                 </div>
               </section>
