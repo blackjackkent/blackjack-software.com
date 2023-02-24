@@ -1,4 +1,11 @@
-const ProjectItem = ({ name, icon, url, description }) => {
+type ProjectItemProps = {
+	name: string;
+	icon: string;
+	url: string;
+	description: string;
+};
+
+const ProjectItem = ({ name, icon, url, description }: ProjectItemProps) => {
 	return (
 		<figure className="item">
 			<div className="wrapper">

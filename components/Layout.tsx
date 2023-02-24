@@ -1,3 +1,4 @@
+import React from 'react';
 import Menu from './header/Menu';
 import HeaderPhoto from './header/HeaderPhoto';
 import SocialLinks from './header/SocialLinks';
@@ -5,7 +6,12 @@ import HeaderButtons from './header/HeaderButtons';
 import Copyrights from './header/Copyrights';
 import styles from './Layout.module.scss';
 
-const Layout = ({ children, title }) => {
+type LayoutProps = {
+	children: React.ReactNode;
+	title?: string | React.ReactNode;
+};
+
+const Layout = ({ children, title = '' }: LayoutProps) => {
 	return (
 		<div className={styles.page}>
 			<div className={styles.pageContent}>
@@ -18,9 +24,9 @@ const Layout = ({ children, title }) => {
 				</header>
 
 				<div className={styles.menuToggle}>
-					<span></span>
-					<span></span>
-					<span></span>
+					<span />
+					<span />
+					<span />
 				</div>
 
 				<div className={styles.contentArea}>

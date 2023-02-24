@@ -14,6 +14,7 @@ const Home = () => {
 				<div className="col-sm-12 col-md-12 col-lg-12">
 					<div className={styles.titleBlock}>
 						<Image
+							alt="logo"
 							className={styles.logo}
 							src="/images/logo.png"
 							width={500}

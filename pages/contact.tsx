@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import { useState } from 'react';
 import Layout from '../components/Layout';
 import styles from './Contact.module.scss';
@@ -13,14 +12,14 @@ const Contact = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		let isValidForm = handleValidation();
+		const isValidForm = handleValidation();
 
 		const res = await fetch('/api/sendgrid', {
 			body: JSON.stringify({
-				email: email,
-				fullname: fullname,
-				subject: subject,
-				message: message
+				email,
+				fullname,
+				subject,
+				message
 			}),
 			headers: {
 				'Content-Type': 'application/json'
@@ -37,7 +36,7 @@ const Contact = () => {
 	};
 
 	return (
-		<Layout title={'Contact'}>
+		<Layout title="Contact">
 			<Head>
 				<title>Blackjack Software - Contact</title>
 				<link rel="icon" href="/favicon.ico" />
@@ -46,31 +45,31 @@ const Contact = () => {
 			<div className="row">
 				<div className="col-xs-12 col-sm-4">
 					<div className={`${styles.lmInfoBlock} gray-default`}>
-						<i className="lnr lnr-map-marker"></i>
+						<i className="lnr lnr-map-marker" />
 						<h4>Chicago, IL</h4>
-						<span className={styles.lmInfoBlockValue}></span>
-						<span className="lm-info-block-text"></span>
+						<span className={styles.lmInfoBlockValue} />
+						<span className="lm-info-block-text" />
 					</div>
 
 					<div className={`${styles.lmInfoBlock} gray-default`}>
-						<i className="lnr lnr-phone-handset"></i>
+						<i className="lnr lnr-phone-handset" />
 						<h4>(773) 413-9463</h4>
-						<span className={styles.lmInfoBlockValue}></span>
-						<span className="lm-info-block-text"></span>
+						<span className={styles.lmInfoBlockValue} />
+						<span className="lm-info-block-text" />
 					</div>
 
 					<div className={`${styles.lmInfoBlock} gray-default`}>
-						<i className="lnr lnr-envelope"></i>
+						<i className="lnr lnr-envelope" />
 						<h4>rosalind@blackjack-software.com</h4>
-						<span className={styles.lmInfoBlockValue}></span>
-						<span className="lm-info-block-text"></span>
+						<span className={styles.lmInfoBlockValue} />
+						<span className="lm-info-block-text" />
 					</div>
 
 					<div className={`${styles.lmInfoBlock} gray-default`}>
-						<i className="lnr lnr-checkmark-circle"></i>
+						<i className="lnr lnr-checkmark-circle" />
 						<h4>Freelance Available</h4>
-						<span className={styles.lmInfoBlockValue}></span>
-						<span className="lm-info-block-text"></span>
+						<span className={styles.lmInfoBlockValue} />
+						<span className="lm-info-block-text" />
 					</div>
 				</div>
 				<div className="col-xs-12 col-sm-8">
@@ -81,70 +80,70 @@ const Contact = () => {
 					</div>
 
 					<form id="contact_form" className="contact-form">
-						<div className="messages"></div>
+						<div className="messages" />
 
 						<div className="controls two-columns">
 							<div className="fields clearfix">
 								<div className="left-column">
 									<div className="form-group form-group-with-icon">
 										<input
-											id="form_name"
+											id="name"
 											type="text"
 											name="name"
 											className="form-control"
 											placeholder=""
-											required="required"
+											required
 											data-error="Name is required."
 										/>
-										<label>Full Name</label>
-										<div className="form-control-border"></div>
-										<div className="help-block with-errors"></div>
+										<label htmlFor="name">Full Name</label>
+										<div className="form-control-border" />
+										<div className="help-block with-errors" />
 									</div>
 
 									<div className="form-group form-group-with-icon">
 										<input
-											id="form_email"
+											id="email"
 											type="email"
 											name="email"
 											className="form-control"
 											placeholder=""
-											required="required"
+											required
 											data-error="Valid email is required."
 										/>
-										<label>Email Address</label>
-										<div className="form-control-border"></div>
-										<div className="help-block with-errors"></div>
+										<label htmlFor="email">Email Address</label>
+										<div className="form-control-border" />
+										<div className="help-block with-errors" />
 									</div>
 
 									<div className="form-group form-group-with-icon">
 										<input
-											id="form_subject"
+											id="subject"
 											type="text"
 											name="subject"
 											className="form-control"
 											placeholder=""
-											required="required"
+											required
 											data-error="Subject is required."
 										/>
-										<label>Subject</label>
-										<div className="form-control-border"></div>
-										<div className="help-block with-errors"></div>
+										<label htmlFor="subject">Subject</label>
+										<div className="form-control-border" />
+										<div className="help-block with-errors" />
 									</div>
 								</div>
 								<div className="right-column">
 									<div className="form-group form-group-with-icon">
 										<textarea
-											id="form_message"
+											id="message"
 											name="message"
 											className="form-control"
 											placeholder=""
-											rows="7"
-											required="required"
+											rows={7}
+											required
 											data-error="Please, leave me a message."
-										></textarea>
-										<label>Message</label>
-										<div className="form-control-border"></div>
-										<div className="help-block with-errors"></div>
+										/>
+										<label htmlFor="message">Message</label>
+										<div className="form-control-border" />
+										<div className="help-block with-errors" />
 									</div>
 								</div>
 							</div>

@@ -5,7 +5,7 @@ const HeaderPhoto = () => {
 	return (
 		<div className="header-content">
 			<div className={styles.headerPhoto}>
-				<Image src="/images/headshot.png" width={180} height={180} />
+				<Image alt="headshot" src="/images/headshot.png" width={180} height={180} />
 			</div>
 			<div className={styles.headerTitles}>
 				<h2>Blackjack Software</h2>
