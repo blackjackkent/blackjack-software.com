@@ -1,0 +1,45 @@
+{
+	"extends": [
+		"next/core-web-vitals",
+		"airbnb",
+		"airbnb/hooks",
+		"plugin:prettier/recommended",
+		"plugin:jest-dom/recommended",
+		"plugin:testing-library/react"
+	],
+	"env": {
+		"browser": true,
+		"jest": true
+	},
+	"rules": {
+		"react/jsx-indent": ["error", "tab"],
+		"react/jsx-filename-extension": "off",
+		"react/jsx-one-expression-per-line": "off",
+		"react/sort-comp": [
+			"error",
+			{
+				"order": ["lifecycle", "static-methods", "everything-else", "render"]
+			}
+		],
+		"class-methods-use-this": "off",
+		"no-plusplus": "off",
+		"react/jsx-indent-props": ["error", "tab"],
+		"react/jsx-props-no-spreading": "off",
+		"react/jsx-wrap-multilines": [
+			"error",
+			{
+				"prop": "ignore"
+			}
+		],
+		"require-yield": "off",
+		"react/function-component-definition": [
+			"error",
+			{
+				"namedComponents": "arrow-function",
+				"unnamedComponents": "arrow-function"
+			}
+		],
+		"react/require-default-props": "off",
+		"react/react-in-jsx-scope": "off"
+	}
+}
