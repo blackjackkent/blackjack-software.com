@@ -1,23 +1,68 @@
 import Head from 'next/head';
 import { useState } from 'react';
+import LoadingIcons from 'react-loading-icons';
 import Layout from '../components/Layout';
 import styles from './Contact.module.scss';
 
+type ErrorInfo = {
+	name?: boolean;
+	email?: boolean;
+	subject?: boolean;
+	message?: boolean;
+};
+
 const Contact = () => {
-	const [fullname, setFullname] = useState('');
+	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [subject, setSubject] = useState('');
 	const [message, setMessage] = useState('');
+	const [errors, setErrors] = useState<ErrorInfo>({});
+	const [isLoading, setIsLoading] = useState(false);
+
+	const [showSuccessMessage, setShowSuccessMessage] = useState(false);
+	const [showFailureMessage, setShowFailureMessage] = useState(false);
+
+	const handleValidation = () => {
+		const tempErrors: ErrorInfo = {};
+		let isValid = true;
+
+		if (!name) {
+			tempErrors.name = true;
+			isValid = false;
+		}
+		if (!email) {
+			tempErrors.email = true;
+			isValid = false;
+		}
+		if (!subject) {
+			tempErrors.subject = true;
+			isValid = false;
+		}
+		if (!message) {
+			tempErrors.message = true;
+			isValid = false;
+		}
+
+		setErrors(tempErrors);
+		return isValid;
+	};
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+		setShowFailureMessage(false);
+		setShowSuccessMessage(false);
+		setErrors({});
+		setIsLoading(true);
 
 		const isValidForm = handleValidation();
+		if (!isValidForm) {
+			return;
+		}
 
-		const res = await fetch('/api/sendgrid', {
+		const res = await fetch('/api/sendEmail', {
 			body: JSON.stringify({
 				email,
-				fullname,
+				name,
 				subject,
 				message
 			}),
@@ -27,12 +72,16 @@ const Contact = () => {
 			method: 'POST'
 		});
 
-		const { error } = await res.json();
+		const { error, ...props } = await res.json();
 		if (error) {
-			console.log(error);
+			setShowFailureMessage(true);
+			setShowSuccessMessage(false);
+			setIsLoading(false);
 			return;
 		}
-		console.log(fullname, email, subject, message);
+		setShowSuccessMessage(true);
+		setShowFailureMessage(false);
+		setIsLoading(false);
 	};
 
 	return (
@@ -79,13 +128,14 @@ const Contact = () => {
 						</h3>
 					</div>
 
-					<form id="contact_form" className="contact-form">
+					<form id="contact_form" className="contact-form" onSubmit={handleSubmit}>
 						<div className="messages" />
 
 						<div className="controls two-columns">
 							<div className="fields clearfix">
 								<div className="left-column">
 									<div className="form-group form-group-with-icon">
+										<label htmlFor="name">Full Name</label>
 										<input
 											id="name"
 											type="text"
@@ -93,14 +143,17 @@ const Contact = () => {
 											className="form-control"
 											placeholder=""
 											required
+											onChange={(e) => setName(e.target.value)}
 											data-error="Name is required."
 										/>
-										<label htmlFor="name">Full Name</label>
 										<div className="form-control-border" />
-										<div className="help-block with-errors" />
+										<div className="help-block with-errors">
+											{errors.name && 'You must enter a name.'}
+										</div>
 									</div>
 
 									<div className="form-group form-group-with-icon">
+										<label htmlFor="email">Email Address</label>
 										<input
 											id="email"
 											type="email"
@@ -108,14 +161,17 @@ const Contact = () => {
 											className="form-control"
 											placeholder=""
 											required
+											onChange={(e) => setEmail(e.target.value)}
 											data-error="Valid email is required."
 										/>
-										<label htmlFor="email">Email Address</label>
 										<div className="form-control-border" />
-										<div className="help-block with-errors" />
+										<div className="help-block with-errors">
+											{errors.email && 'You must enter a valid email.'}
+										</div>
 									</div>
 
 									<div className="form-group form-group-with-icon">
+										<label htmlFor="subject">Subject</label>
 										<input
 											id="subject"
 											type="text"
@@ -123,15 +179,18 @@ const Contact = () => {
 											className="form-control"
 											placeholder=""
 											required
+											onChange={(e) => setSubject(e.target.value)}
 											data-error="Subject is required."
 										/>
-										<label htmlFor="subject">Subject</label>
 										<div className="form-control-border" />
-										<div className="help-block with-errors" />
+										<div className="help-block with-errors">
+											{errors.subject && 'You must enter a subject.'}
+										</div>
 									</div>
 								</div>
 								<div className="right-column">
 									<div className="form-group form-group-with-icon">
+										<label htmlFor="message">Message</label>
 										<textarea
 											id="message"
 											name="message"
@@ -139,11 +198,13 @@ const Contact = () => {
 											placeholder=""
 											rows={7}
 											required
+											onChange={(e) => setMessage(e.target.value)}
 											data-error="Please, leave me a message."
 										/>
-										<label htmlFor="message">Message</label>
 										<div className="form-control-border" />
-										<div className="help-block with-errors" />
+										<div className="help-block with-errors">
+											{errors.message && 'You must enter a message.'}
+										</div>
 									</div>
 								</div>
 							</div>
@@ -153,8 +214,14 @@ const Contact = () => {
 										data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"
 										data-theme="dark"
 									></div> */}
-
-							<input type="submit" className="button btn-send" value="Send message" />
+							<div className={styles.submission}>
+								<input
+									type="submit"
+									className="button btn-send"
+									value="Send message"
+								/>
+								{isLoading && <LoadingIcons.Grid height="50" width="50" />}
+							</div>
 						</div>
 					</form>
 				</div>
