@@ -1,3 +1,5 @@
+import styles from './ProjectItem.module.scss';
+
 type ProjectItemProps = {
 	name: string;
 	icon: string;
@@ -8,10 +10,10 @@ type ProjectItemProps = {
 const ProjectItem = ({ name, icon, url, description }: ProjectItemProps) => {
 	return (
 		<figure className="item">
-			<div className="wrapper">
-				<div className="portfolio-item-header">
+			<div className={styles.wrapper}>
+				<div className={styles.portfolioItemHeader}>
 					<i className={`fa ${icon}`} />
-					<h4 className="name">{name}</h4>
+					<h4 className={styles.name}>{name}</h4>
 					<a href={url}>{url}</a>
 				</div>
 				<p>{description}</p>

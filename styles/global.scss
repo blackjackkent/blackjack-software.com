@@ -247,3 +247,101 @@ input[type='submit']:focus {
 .white-space-70 {
 	padding-bottom: 70px;
 }
+.controls.two-columns .left-column {
+	width: 47%;
+	float: left;
+	margin-right: 3%;
+}
+
+.controls.two-columns .right-column {
+	width: 50%;
+	float: right;
+}
+
+.g-recaptcha {
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 480px) {
+	.controls.two-columns .right-column,
+	.controls.two-columns .left-column {
+		float: none;
+		margin: 0;
+		width: 100%;
+	}
+}
+.form-group {
+	position: relative;
+	margin: 0 0 21.5px;
+}
+.form-control,
+.form-control:focus {
+	height: 42px;
+}
+
+.form-control,
+.form-control:focus,
+.has-error .form-control,
+.has-error .form-control:focus,
+input[type='search'],
+input[type='password'],
+input[type='text'] {
+	position: relative;
+	border: 2px solid $text-color;
+	border-radius: 5px;
+	display: block;
+	font-size: 1em;
+	line-height: 1.4;
+	margin: 0;
+	padding: 10px 25px 10px 12px;
+	width: 100%;
+	background: 0 0;
+	background-color: transparent;
+	text-align: left;
+	color: inherit;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	outline: none;
+	font-family: 'Poppins', Helvetica, sans-serif;
+	box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.1);
+}
+
+textarea.form-control,
+textarea.form-control:focus {
+	height: auto;
+}
+
+.form-control ~ .form-control-border {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 100%;
+	bottom: 0;
+	border-radius: 5px;
+	top: 0;
+	opacity: 0;
+	background: transparent;
+	border: 2px solid $primary-color;
+	border-right-width: 0;
+	height: 100%;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus ~ .form-control-border {
+	left: 0;
+	right: 0;
+	height: 100%;
+	z-index: 1;
+	opacity: 1;
+	border-right-width: 2px;
+}
+
+.has-error .form-control ~ .form-control-border {
+	border-color: #ff4c4c;
+}

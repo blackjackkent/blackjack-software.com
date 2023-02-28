@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import ProjectItem from '../components/projects/ProjectItem';
+import styles from './Projects.module.scss';
 
 const Portfolio = () => {
 	return (
@@ -12,8 +13,8 @@ const Portfolio = () => {
 
 			<div className="row">
 				<div className="col-xs-12 col-sm-12">
-					<div className="portfolio-content">
-						<div className="items">
+					<div className={styles.portfolioContent}>
+						<div className={styles.items}>
 							<ProjectItem
 								name="RPThreadTracker"
 								icon="fa-laptop-code"
