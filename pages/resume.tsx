@@ -12,6 +12,7 @@ const Resume = () => {
 
 			<div className="row">
 				<div className="col-xs-12 col-sm-7">
+					<div className="white-space-30" />
 					<div className="block-title">
 						<h3>Experience</h3>
 					</div>
@@ -102,6 +103,7 @@ const Resume = () => {
 							</div>
 						</div>
 					</div>
+					<div className="white-space-30" />
 
 					<div className="block-title">
 						<h3>Education</h3>
@@ -135,6 +137,7 @@ const Resume = () => {
 				</div>
 
 				<div className="col-xs-12 col-sm-5">
+					<div className="white-space-30" />
 					<div className="block-title">
 						<h3>
 							Speaking <span>Engagements</span>

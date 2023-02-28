@@ -84,7 +84,7 @@ const About = () => {
 								<div className={styles.ciIcon}>
 									<i className="lnr lnr-laptop-phone" />
 								</div>
-								<div className="ciText">
+								<div className={styles.ciText}>
 									<h4>Web App Development</h4>
 									<p>
 										If you have a task, a community, or an idea that needs
@@ -105,20 +105,25 @@ const About = () => {
 								<div className={styles.ciIcon}>
 									<i className="lnr lnr-graduation-hat" />
 								</div>
-								<h4>Software Development Education</h4>
-								<p>
-									I offer <Link href="/contact">private tutoring</Link> for those
-									interested in learning to code, making the complicated concepts
-									of software development understandable and accessible. I also do
-									regular{' '}
-									<a href="http://www.twitch.tv/blackjack_kent">
-										livecoding streams on Twitch
-									</a>
-									, where I answer any and all audience questions about all things
-									programming, and run a{' '}
-									<a href="http://www.tiktok.com/@blackjackkent">TikTok series</a>{' '}
-									on getting started with Javascript from the ground up.
-								</p>
+
+								<div className={styles.ciText}>
+									<h4>Software Development Education</h4>
+									<p>
+										I offer <Link href="/contact">private tutoring</Link> for
+										those interested in learning to code, making the complicated
+										concepts of software development understandable and
+										accessible. I also do regular{' '}
+										<a href="http://www.twitch.tv/blackjack_kent">
+											livecoding streams on Twitch
+										</a>
+										, where I answer any and all audience questions about all
+										things programming, and run a{' '}
+										<a href="http://www.tiktok.com/@blackjackkent">
+											TikTok series
+										</a>{' '}
+										on getting started with Javascript from the ground up.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>

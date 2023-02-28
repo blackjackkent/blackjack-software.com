@@ -166,3 +166,84 @@ input[type='submit']:focus {
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 }
+
+.block-title {
+	display: inline-block;
+	position: relative;
+	padding-right: 12px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+
+.block-title h3 {
+	position: relative;
+	font-size: 21px;
+	z-index: 1;
+}
+
+.block-title h3 span {
+	color: $primary-color;
+}
+
+.block-title:after {
+	position: absolute;
+	opacity: 0.45;
+	top: 10px;
+	right: 0;
+	content: '';
+	height: 20px;
+	width: 30px;
+	background-image: -webkit-repeating-radial-gradient(
+		center center,
+		$primary-color,
+		$primary-color 1px,
+		transparent 0px,
+		transparent 100%
+	);
+	background-image: -moz-repeating-radial-gradient(
+		center center,
+		$primary-color,
+		$primary-color 1px,
+		transparent 0px,
+		transparent 100%
+	);
+	background-image: -ms-repeating-radial-gradient(
+		center center,
+		$primary-color,
+		$primary-color 1px,
+		transparent 0px,
+		transparent 100%
+	);
+	-webkit-background-size: 6px 6px;
+	-moz-background-size: 6px 6px;
+	background-size: 6px 6px;
+	z-index: 0;
+}
+
+.white-space-10 {
+	padding-bottom: 10px;
+}
+
+.white-space-20 {
+	padding-bottom: 20px;
+}
+
+.white-space-30 {
+	padding-bottom: 30px;
+}
+
+.white-space-40 {
+	padding-bottom: 40px;
+}
+
+.white-space-50 {
+	padding-bottom: 50px;
+}
+
+.white-space-60 {
+	padding-bottom: 60px;
+}
+
+.white-space-70 {
+	padding-bottom: 70px;
+}

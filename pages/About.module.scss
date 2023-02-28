@@ -1,46 +1,48 @@
-@import "../styles//variables";
+@import '../styles/_variables.scss';
 
-.infoList {
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    li {
-      margin-bottom: 10px;
-    }
-  }
-  .title {
-    color: $primary-color;
-    margin-right: 5px;
-    font-weight: 600;
-  }
+.infoList ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.infoList ul li {
+	margin-bottom: 10px;
+}
+
+.infoList .title {
+	color: $primary-color;
+	margin-right: 5px;
+	font-weight: 600;
 }
 
 .infoBlockWIcon {
-  margin-bottom: 25px;
-  .ciText {
-    h4 {
-      margin: 5px 0;
-    }
-    p {
-      font-size: 0.95em;
-    }
-  }
-  .ciIcon {
-    display: table-cell;
-    width: 54px;
-    padding-right: 25px;
-  }
-  i {
-    position: relative;
-    font-size: 42px;
-    color: $primary-color;
-    opacity: 0.7;
-  }
+	margin-bottom: 25px;
+}
+
+.infoBlockWIcon .ciText h4 {
+	margin: 5px 0;
+}
+
+.infoBlockWIcon .ciText p {
+	font-size: 0.95em;
+}
+
+.infoBlockWIcon .ciIcon {
+	display: table-cell;
+	width: 54px;
+	padding-right: 25px;
+}
+
+.infoBlockWIcon i {
+	position: relative;
+	font-size: 42px;
+	color: $primary-color;
+	opacity: 0.7;
 }
 
 @media only screen and (max-width: 768px) {
-  .infoList {
-    margin-top: 20px;
-  }
+	.infoList {
+		margin-top: 20px;
+	}
 }
