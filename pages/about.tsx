@@ -80,8 +80,8 @@ const About = () => {
 				<div className="col-xs-12 col-sm-6">
 					<div className="col-inner">
 						<div className="info-list-w-icon">
-							<div className="infoBlockWIcon">
-								<div className="ciIcon">
+							<div className={styles.infoBlockWIcon}>
+								<div className={styles.ciIcon}>
 									<i className="lnr lnr-laptop-phone" />
 								</div>
 								<div className="ciText">
@@ -101,8 +101,8 @@ const About = () => {
 				<div className="col-xs-12 col-sm-6">
 					<div className="col-inner">
 						<div className="info-list-w-icon">
-							<div className="infoBlockWIcon">
-								<div className="ciIcon">
+							<div className={styles.infoBlockWIcon}>
+								<div className={styles.ciIcon}>
 									<i className="lnr lnr-graduation-hat" />
 								</div>
 								<h4>Software Development Education</h4>
