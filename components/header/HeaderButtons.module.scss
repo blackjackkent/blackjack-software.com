@@ -1,15 +1,17 @@
-@import "../../styles/variables";
+@import '../../styles/_variables.scss';
 
 .headerButtons {
-  margin-top: 50px;
-  .primary {
-    background-color: transparent;
-    color: $text-color;
-    border-color: $text-color;
-    &:hover {
-      background-color: $white;
-      color: $primary-color;
-      border-color: $white;
-    }
-  }
+	margin-top: 50px;
+}
+
+.headerButtons .primary {
+	background-color: transparent;
+	color: $text-color;
+	border-color: $text-color;
+}
+
+.headerButtons .primary:hover {
+	background-color: $white;
+	color: $primary-color;
+	border-color: $white;
 }

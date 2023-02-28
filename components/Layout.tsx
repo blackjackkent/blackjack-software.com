@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Menu from './header/Menu';
 import HeaderPhoto from './header/HeaderPhoto';
 import SocialLinks from './header/SocialLinks';
@@ -12,10 +12,11 @@ type LayoutProps = {
 };
 
 const Layout = ({ children, title = '' }: LayoutProps) => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	return (
 		<div className={styles.page}>
 			<div className={styles.pageContent}>
-				<header className={`${styles.header} ${styles.mobileMenuHide}`}>
+				<header className={`${styles.header} ${!isMenuOpen && styles.mobileMenuHide}`}>
 					<HeaderPhoto />
 					<Menu />
 					<SocialLinks />
@@ -23,7 +24,13 @@ const Layout = ({ children, title = '' }: LayoutProps) => {
 					<Copyrights />
 				</header>
 
-				<div className={styles.menuToggle}>
+				<div
+					className={`${styles.menuToggle} ${isMenuOpen && styles.open}`}
+					onKeyUp={() => setIsMenuOpen(!isMenuOpen)}
+					onClick={() => setIsMenuOpen(!isMenuOpen)}
+					role="button"
+					tabIndex={-1}
+				>
 					<span />
 					<span />
 					<span />
