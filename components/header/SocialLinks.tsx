@@ -1,3 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+	faDiscord,
+	faGithub,
+	faPatreon,
+	faTiktok,
+	faTwitch
+} from '@fortawesome/free-brands-svg-icons';
 import styles from './SocialLinks.module.scss';
 
 const SocialLinks = () => {
@@ -10,7 +18,7 @@ const SocialLinks = () => {
 						href="http://www.twitch.tv/blackjack_kent"
 						target="_blank"
 					>
-						<i className="fab fa-twitch" />
+						<FontAwesomeIcon icon={faTwitch} />
 					</a>
 				</li>
 				<li>
@@ -19,7 +27,7 @@ const SocialLinks = () => {
 						href="http://www.discord.gg/k4gDad5"
 						target="_blank"
 					>
-						<i className="fab fa-discord" />
+						<FontAwesomeIcon icon={faDiscord} />
 					</a>
 				</li>
 				<li>
@@ -28,7 +36,7 @@ const SocialLinks = () => {
 						href="http://www.tiktok.com/@blackjackkent"
 						target="_blank"
 					>
-						<i className="fab fa-tiktok" />
+						<FontAwesomeIcon icon={faTiktok} />
 					</a>
 				</li>
 				<li>
@@ -37,7 +45,7 @@ const SocialLinks = () => {
 						href="http://www.patreon.com/blackjacksoftware"
 						target="_blank"
 					>
-						<i className="fab fa-patreon" />
+						<FontAwesomeIcon icon={faPatreon} />
 					</a>
 				</li>
 				<li>
@@ -46,7 +54,7 @@ const SocialLinks = () => {
 						href="https://github.com/blackjackkent"
 						target="_blank"
 					>
-						<i className="fab fa-github" />
+						<FontAwesomeIcon icon={faGithub} />
 					</a>
 				</li>
 			</ul>

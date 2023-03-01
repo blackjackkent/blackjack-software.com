@@ -1,3 +1,5 @@
+@import url('./fonts/linear-icons-font/style.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
 @import './theme/reset.css';
 @import './theme/bootstrap-grid.min.css';
 @import './theme/animations.css';
@@ -5,15 +7,6 @@
 @import './theme/owl.carousel.css';
 @import './theme/magnific-popup.css';
 @import './variables';
-
-/* Google fonts */
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i');
-
-/* Linear Icons Font */
-@import url('./fonts/linear-icons-font/style.css');
-
-/* FontAwesome Free Icons Font */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css');
 
 html,
 #__next {
