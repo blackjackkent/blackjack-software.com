@@ -35,3 +35,9 @@
 		font-size: 18px;
 	}
 }
+@media only screen and (max-width: 768px) {
+	.titleBlock img {
+		max-width: 280px;
+		max-height: 280px;
+	}
+}
