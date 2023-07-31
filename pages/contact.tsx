@@ -19,8 +19,8 @@ const Contact = () => {
 	const [errors, setErrors] = useState<ErrorInfo>({});
 	const [isLoading, setIsLoading] = useState(false);
 
-	const [showSuccessMessage, setShowSuccessMessage] = useState(false);
-	const [showFailureMessage, setShowFailureMessage] = useState(false);
+	const [, setShowSuccessMessage] = useState(false);
+	const [, setShowFailureMessage] = useState(false);
 
 	const handleValidation = () => {
 		const tempErrors: ErrorInfo = {};

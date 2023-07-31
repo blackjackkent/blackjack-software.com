@@ -1,9 +1,9 @@
 import Head from 'next/head';
+import { faChalkboardTeacher, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faTiktok, faTwitch } from '@fortawesome/free-brands-svg-icons';
 import Layout from '../components/Layout';
 import ProjectItem from '../components/projects/ProjectItem';
 import styles from './Projects.module.scss';
-import { faChalkboardTeacher, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import { faTiktok, faTwitch } from '@fortawesome/free-brands-svg-icons';
 
 const Portfolio = () => {
 	return (
