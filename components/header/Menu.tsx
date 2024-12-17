@@ -22,12 +22,7 @@ const Menu = () => {
 					<span className={styles.linkText}>Resume</span>
 				</Link>
 			</li>
-			<li>
-				<Link href="/projects" className="nav-anim">
-					<span className={`${styles.menuIcon} lnr lnr-briefcase`} />
-					<span className={styles.linkText}>Projects</span>
-				</Link>
-			</li>
+
 			<li>
 				<Link href="/contact" className="nav-anim">
 					<span className={`${styles.menuIcon} lnr lnr-envelope`} />

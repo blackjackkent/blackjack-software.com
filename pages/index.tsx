@@ -20,14 +20,14 @@ const Home = () => {
 							width={500}
 							height={500}
 						/>
-						<h2>Rosalind Wills</h2>
+						<h2>Rosalind W.</h2>
 						<div>
 							<div className="item">
 								<div className={styles.spSubtitle}>Web App Developer</div>
 							</div>
 
 							<div className="item">
-								<div className={styles.spSubtitle}>Tech Speaker and Educator</div>
+								<div className={styles.spSubtitle}>Tech Educator</div>
 							</div>
 						</div>
 					</div>

@@ -23,10 +23,9 @@ const About = () => {
 			<div className="row">
 				<div className="col-xs-12 col-sm-7">
 					<p>
-						Roz for short. She/her. Javascript Engineer at{' '}
-						<a href="http://oneswitchboard.com">Switchboard</a>. Variety Twitch
-						streamer. Tech speaker and content creator. Interested in DevRel, ReactJS,
-						video games, and napping with the cat.
+						Roz for short. She/her. Javascript Engineer. Variety Twitch streamer.
+						Writer. Interested in ReactJS, helping people, video games, and napping with
+						the cat.
 					</p>
 					<p>
 						I have over a decade of experience in the software industry and my passion
@@ -77,7 +76,7 @@ const About = () => {
 			</div>
 
 			<div className="row">
-				<div className="col-xs-12 col-sm-6">
+				<div className="col-xs-12 col-md-6 col-lg-12 col-xl-6">
 					<div className="col-inner">
 						<div className="info-list-w-icon">
 							<div className={styles.infoBlockWIcon}>
@@ -95,11 +94,6 @@ const About = () => {
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-
-				<div className="col-xs-12 col-sm-6">
-					<div className="col-inner">
 						<div className="info-list-w-icon">
 							<div className={styles.infoBlockWIcon}>
 								<div className={styles.ciIcon}>
@@ -112,16 +106,41 @@ const About = () => {
 										I offer <Link href="/contact">private tutoring</Link> for
 										those interested in learning to code, making the complicated
 										concepts of software development understandable and
-										accessible. I also do regular{' '}
-										<a href="http://www.twitch.tv/blackjack_kent">
-											livecoding streams on Twitch
-										</a>
-										, where I answer any and all audience questions about all
-										things programming, and run a{' '}
-										<a href="http://www.tiktok.com/@blackjackkent">
-											TikTok series
-										</a>{' '}
-										on getting started with Javascript from the ground up.
+										accessible. If you are interested in learning about software
+										development or need help with something you're already
+										learning about, reach out to me!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="col-xs-12 col-md-6  col-lg-12 col-xl-6">
+					<div className="col-inner">
+						<div className="info-list-w-icon">
+							<div className={styles.infoBlockWIcon}>
+								<div className={styles.ciIcon}>
+									<i className="lnr lnr-earth" />
+								</div>
+
+								<div className={styles.ciText}>
+									<h4>Pro-Bono Web Development</h4>
+									<p>
+										I offer web development and other technological support
+										pro-bono to organizations working for positive change in the
+										Chicago area and elsewhere, including but not limited to:
+									</p>
+									<ul>
+										<li>Community and mutual aid groups</li>
+										<li>Humanitarian organizations</li>
+										<li>Civil rights and advocacy organizations</li>
+										<li>Charity and social service organizations</li>
+										<li>Environmental organizations</li>
+									</ul>
+									<p>
+										If you work with an organization in need of web dev or tech
+										support, please <Link href="/contact">reach out</Link>; I'd
+										love to see what I can do to help you!
 									</p>
 								</div>
 							</div>
