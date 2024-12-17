@@ -107,7 +107,7 @@ const About = () => {
 										those interested in learning to code, making the complicated
 										concepts of software development understandable and
 										accessible. If you are interested in learning about software
-										development or need help with something you're already
+										development or need help with something you&quot;re already
 										learning about, reach out to me!
 									</p>
 								</div>
@@ -139,8 +139,8 @@ const About = () => {
 									</ul>
 									<p>
 										If you work with an organization in need of web dev or tech
-										support, please <Link href="/contact">reach out</Link>; I'd
-										love to see what I can do to help you!
+										support, please <Link href="/contact">reach out</Link>;
+										I&quot;d love to see what I can do to help you!
 									</p>
 								</div>
 							</div>

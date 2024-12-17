@@ -72,7 +72,7 @@ const Contact = () => {
 			method: 'POST'
 		});
 
-		const { error, ...props } = await res.json();
+		const { error } = await res.json();
 		if (error) {
 			setShowFailureMessage(true);
 			setShowSuccessMessage(false);
