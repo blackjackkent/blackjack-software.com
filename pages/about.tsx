@@ -4,9 +4,6 @@ import Layout from '../components/Layout';
 import styles from './About.module.scss';
 
 const About = () => {
-	const now = new Date();
-	const birthday = new Date(1989, 6, 5);
-	const age = now.getFullYear() - birthday.getFullYear() - 1;
 	return (
 		<Layout
 			title={
@@ -39,11 +36,6 @@ const About = () => {
 				<div className="col-xs-12 col-sm-5">
 					<div className={styles.infoList}>
 						<ul>
-							<li>
-								<span className={styles.title}>Age</span>
-								<span className="value">{age}</span>
-							</li>
-
 							<li>
 								<span className={styles.title}>Residence</span>
 								<span className="value">Chicago, IL, USA</span>
